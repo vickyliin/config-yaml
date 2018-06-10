@@ -1,9 +1,14 @@
 from setuptools import setup
 
+with open('README.md', 'r') as f:
+    long_description = f.read()
+
 setup(
     name='config-yaml',
-    version='0.0.0',
+    version='0.0.2',
     description='Serialize and deserialize your configurations/arguments to yaml.',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url='https://github.com/vickyliin/config-yaml',
     author='vickyliin',
     author_email='vickyliinn@gmail.com',
